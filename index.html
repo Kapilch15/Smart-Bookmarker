@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks - Your Favorite Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script> <!-- Link to the JavaScript file -->
+</head>
+
+<body>
+    <header>
+        <h1>My Bookmarks</h1>
+    </header>
+    <main>
+        <section class="bookmark-form">
+            <input type="url" name="url" id="urlInput" placeholder="Enter URL" pattern="htpps://" size="50" required>
+            <button id="addBookMark">Add Bookmark</button>
+            <button id="deleteAll">Delete All Bookmark</button>
+        </section>
+        <section class="bookmarks">
+            <ul class="bookmarks-list">
+                <!-- Bookmark list will be dynamically generated here -->
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

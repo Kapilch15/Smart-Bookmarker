@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #98717135;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+    background-color: #42df;
+}
+
+main>section {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+section>input {
+    padding: 1.3em 8px;
+    margin-right: 7px;
+}
+
+button {
+    margin-right: 12px;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 12px 8px;
+}
+
+#addBookmark {
+    background-color: rgb(29, 24, 50);
+    color: #fffe;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+}
+
+#deleteAll {
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    background-color: #d6e410e7;
+}
+
+.bookmarks {
+    border: 2px solid #131ed2;
+}
+
+
+.bookmarks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 8px 0.14em;
+    margin: 20px auto;
+    border: 2px solid #131ed2;
+}
+
+.bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    border: none;
+    outline: none;
+}
+
+.buttons .edit {
+    padding: 3px 7px;
+    background-color: #d6e410e7;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.buttons .delete {
+    padding: 3px 7px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+    background-color: #ef3232ee;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    section>input {
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 21px 0.8em;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        padding: 0.4em 4rem;
+        margin-bottom: 1em;
+        font-size: 2rem;
+    }
+
+    /* Bookmark button css  */
+    .bookmark-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons {
+        margin-top: 1em;
+    }
+
+    .buttons .edit {
+        font-size: 1.5rem;
+    }
+
+    .buttons .delete {
+        font-size: 1.5rem;
+    }
+}
